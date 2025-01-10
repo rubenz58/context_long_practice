@@ -22,9 +22,14 @@ describe("allTheArgs()", function () {
     let bowSandy = allTheArgs(bow, "Sandy");
     let bowJoe = allTheArgs(bow, "Joe");
 
+    console.log(addFive());
     assert.equal(addFive(), 5);
+    console.log(addFive(10));
+    console.log(addFive(1));
     assert.equal(addFive(10), 15);
     assert.equal(addTwenty(10), 30);
+
+
     assert.equal(bowSandy(), "You bowed to Sandy");
     assert.equal(bowJoe(), "You bowed to Joe");
     assert.equal(

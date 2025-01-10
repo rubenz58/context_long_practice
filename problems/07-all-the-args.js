@@ -1,5 +1,10 @@
 function allTheArgs(func, ...args) {
   // Your code here
+
+  let funk = func.bind(this, args);
+
+  return funk;
+
 }
 
 /*****************************************************************************/
